@@ -5,14 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbucks Coffee Korea</title>
-
+    <!-- 오픈 그래프 -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Starbucks" />
     <meta property="og:title" content="Starbucks Coffee Korea" />
     <meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
     <meta property="og:image" content="./images/starbucks_seo.jpg" />
     <meta property="og:url" content="https://starbucks.co.kr" />
-
+    <!-- 트위터 카드 -->
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:site" content="Starbucks" />
     <meta property="twitter:title" content="Starbucks Coffee Korea" />
@@ -20,19 +20,27 @@
     <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
     <meta property="twitter:url" content="https://starbucks.co.kr" />
 
-    <link rel="icon" href="./favicon.ico" />
+    <!--파비콘 선언-->
+    <link rel="icon" href="./favicon.png" />
+    <!-- 스타일 초기화 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-
+    
+    <!-- 폰트 연결 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-
+    <!-- Google Material Icons 연결 -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
+    <!-- main.css 링크 연결 -->
     <link rel="stylesheet" href="./css/main.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
+    <!-- swiper 6.0v -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+    <!-- main.js 링크 연결 -->
     <script defer src="./js/main.js"></script>
 </head>
 
@@ -40,11 +48,11 @@
     <!-- HEADER -->
     <header>
         <div class="inner">
-
+            <!-- 로고 -->
             <a href="/" class="logo">
                 <img src="./images/starbucks_logo.png" alt="STARBUCKS">
             </a>
-
+            <!-- 서브메뉴 -->
             <div class="sub-menu">
                 <ul class="menu">
                     <li>
@@ -65,7 +73,7 @@
                     <div class="material-icons">search</div>
                 </div>
             </div>
-
+            <!-- 메인메뉴 -->
             <ul class="main-manu">
                 <li class="item">
                     <div class="item__name">COFFEE</div>
@@ -365,7 +373,7 @@
                 </li>
             </ul>
         </div>
-
+        <!-- badges -->
         <div class="badges">
             <div class="badge">
                 <img src="./images/badge1.jpg" alt="Badge" />
@@ -396,9 +404,84 @@
                 <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
             </div>
             
-
         </div>
     </section>
+
+
+    <!-- NOTICE -->
+    <section class="notice">
+        <!-- notice -->
+        <div class="notice-line">
+            <div class="bg-left"></div>
+            <div class="bg-right"></div>
+            <div class="inner">
+                <div class="inner__left">
+                    <h2>공지사항</h2>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">크리스마스 & 연말연시 스타벅스 매장 영업시간 변경 안내</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">스타벅스커피 코리아 애플리케이션 버전 업데이트</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="notice-line__more">
+                        <div class="material-icons">add_circle</div>
+                    </a>
+                </div>
+                <div class="inner__right">
+                    <h2>스타벅스 프로모션</h2>
+                    <div class="toggle-promotion">
+                        <div class="material-icons">upload</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- promotion -->
+        <div class="promotion">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/promotion_slide1.jpg" alt="2021 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!" />
+                        <a href="#" class="btn">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/promotion_slide2.jpg" alt="" />
+                        <a href="#" class="btn">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/promotion_slide3.jpg" alt="" />
+                        <a href="#" class="btn">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/promotion_slide4.jpg" alt="" />
+                        <a href="#" class="btn">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/promotion_slide5.jpg" alt="" />
+                        <a href="#" class="btn">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-prev">
+                <div class="material-icons">arrow_back</div>
+            </div>
+            <div class="swiper-next">
+                <div class="material-icons">arrow_forward</div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
